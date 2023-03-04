@@ -9,6 +9,7 @@ public class WordManager : MonoBehaviour {
     private bool hasActiveWord;
     private Word activeWord;
     public ScoreDisplay scoreDisplay;
+    public PlayerController playerController;
 
     public void AddWord() {
         Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
@@ -18,6 +19,7 @@ public class WordManager : MonoBehaviour {
 
     public void TypeLetter(char letter) {
         if (hasActiveWord) {
+            playerController.WordTyped(activeWord);
             if (activeWord.GetNextLetter() == letter) {
                 activeWord.TypeLetter();
             }

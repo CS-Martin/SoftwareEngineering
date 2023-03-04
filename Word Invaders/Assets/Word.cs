@@ -8,7 +8,7 @@ public class Word {
     public string word;
     private int typeIndex;
 
-    WordDisplay display;
+    public WordDisplay display;
     
     public Word(string word, WordDisplay display) {
         this.word = word;
