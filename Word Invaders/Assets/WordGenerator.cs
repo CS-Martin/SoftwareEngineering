@@ -5,7 +5,7 @@ using UnityEngine;
 public class WordGenerator : MonoBehaviour {
     
     private static string[] wordList = {
-        "slope", "announce", "drink", "baby", "watch", "grieving", "depend", "fang", "innate", "one", "experience", "authority", "dependent", "lying", "reminiscent", "momentous", "ugly", "sisters", "receive", "unable", "guard", "brick", "north", "air", "abiding", "mint", "spicy", "sick", "supply", "snake", "spiky", "bewildered", "education", "wander", "watery", "gamy", "wax", "toe", "rest", "wiry", "gaping", "rich", "judge", "cellar", "trite", "peace", "many", "truculent", "crime", "turkey"
+        "bribery", "fraud", "embezzlement", "nepotism", "collusion", "kickbacks", "extortion", "graft", "patronage", "payoffs", "racketeering", "blackmail", "skimming", "favors", "bribes", "cronyism", "lobbying", "favoritism", "smuggling", "kleptocracy", "oligarchy", "clientelism", "drugs", "debt"
     };
     
     public static string GetRandomWord() {

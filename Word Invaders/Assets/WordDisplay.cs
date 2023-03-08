@@ -7,7 +7,7 @@ using TMPro;
 public class WordDisplay : MonoBehaviour {
     
     public TextMeshProUGUI text;
-    public float fallSpeed = 1f;
+    public float fallSpeed = 0.95f;
 
     private void Update() {
         transform.Translate(0f, -fallSpeed * Time.deltaTime, 0f);
